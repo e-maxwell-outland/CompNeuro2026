@@ -8,9 +8,6 @@ spikes).
 import numpy as np
 import matplotlib.pyplot as plt
 
-from hh_sim import hh_sim
-
-
 def is_repetitive(Id, gK=36.0, tmax=300.0, min_spikes=4):
     """True if constant current Id gives >= min_spikes after the transient."""
     _, _, spk, _ = hh_sim(Id=Id, gK=gK, tmax=tmax)
